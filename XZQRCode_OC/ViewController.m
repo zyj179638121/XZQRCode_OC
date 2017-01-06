@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "XZQRCodeController.h"
 
-@interface ViewController ()
+@interface ViewController ()<XZQRCodeDelegate>
 
 @end
 
@@ -16,9 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *scan = [[UIButton alloc] init];
+    scan.frame = CGRectMake(100, 100, 60, 40);
+    [scan setTitle:@"scan" forState:UIControlStateNormal];
+    [scan setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [scan addTarget:self action:@selector(scanClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:scan];
 }
 
+- (void)scanClick {
+    XZQRCodeController *scan = [[XZQRCodeController alloc] init];
+    scan.delegate = self;
+    [self.navigationController pushViewController:scan animated:YES];
+}
+
+
+- (void)XZQRCodeScanWithResult:(NSString *)result {
+    NSLog(@"result = %@",result);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

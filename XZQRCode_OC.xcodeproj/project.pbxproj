@@ -13,6 +13,7 @@
 		A3A7195D1E1F444C00ABE2A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A7195B1E1F444C00ABE2A2 /* Main.storyboard */; };
 		A3A7195F1E1F444C00ABE2A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3A7195E1E1F444C00ABE2A2 /* Assets.xcassets */; };
 		A3A719621E1F444C00ABE2A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3A719601E1F444C00ABE2A2 /* LaunchScreen.storyboard */; };
+		A3A7196C1E1F452300ABE2A2 /* XZQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A7196B1E1F452300ABE2A2 /* XZQRCodeController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A3A7195E1E1F444C00ABE2A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3A719611E1F444C00ABE2A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3A719631E1F444C00ABE2A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3A7196A1E1F452300ABE2A2 /* XZQRCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XZQRCodeController.h; sourceTree = "<group>"; };
+		A3A7196B1E1F452300ABE2A2 /* XZQRCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XZQRCodeController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		A3A719511E1F444B00ABE2A2 /* XZQRCode_OC */ = {
 			isa = PBXGroup;
 			children = (
+				A3A719691E1F44EB00ABE2A2 /* XZQRCode_OC */,
 				A3A719551E1F444C00ABE2A2 /* AppDelegate.h */,
 				A3A719561E1F444C00ABE2A2 /* AppDelegate.m */,
 				A3A719581E1F444C00ABE2A2 /* ViewController.h */,
@@ -77,6 +81,15 @@
 				A3A719531E1F444B00ABE2A2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3A719691E1F44EB00ABE2A2 /* XZQRCode_OC */ = {
+			isa = PBXGroup;
+			children = (
+				A3A7196A1E1F452300ABE2A2 /* XZQRCodeController.h */,
+				A3A7196B1E1F452300ABE2A2 /* XZQRCodeController.m */,
+			);
+			path = XZQRCode_OC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +123,7 @@
 				TargetAttributes = {
 					A3A7194E1E1F444B00ABE2A2 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = A54ZG5654W;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +167,7 @@
 				A3A7195A1E1F444C00ABE2A2 /* ViewController.m in Sources */,
 				A3A719571E1F444C00ABE2A2 /* AppDelegate.m in Sources */,
 				A3A719541E1F444B00ABE2A2 /* main.m in Sources */,
+				A3A7196C1E1F452300ABE2A2 /* XZQRCodeController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +287,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A54ZG5654W;
 				INFOPLIST_FILE = XZQRCode_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zyj.XZQRCode-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,7 +300,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A54ZG5654W;
 				INFOPLIST_FILE = XZQRCode_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zyj.XZQRCode-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -309,6 +328,7 @@
 				A3A719681E1F444C00ABE2A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
