@@ -1,6 +1,6 @@
 XZQRCode_OC
 ===
-### 轻量级iOS10原生二维码扫一扫
+### 轻量级iOS原生二维码扫一扫
 
 ## Swift版本
 Swift版本的二维码扫描请移步[XZQRCode_Swift](https://github.com/zyj179638121/XZQRCode_Swift.git)
