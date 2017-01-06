@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XZQRCode_OC"
-  s.version      = "1"
+  s.version      = "1.1"
   s.summary      = "XZQRCode_OC."
 
   s.description  = <<-DESC
